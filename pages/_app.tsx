@@ -1,9 +1,9 @@
 import type { AppProps } from 'next/app'
-import Layout from './components/Layout'
+import DashboardLayout from './components/Layout'
 import '../styles/globals.scss'
  
 export default function App({ Component, pageProps }: AppProps) {
-  return ( <Layout>
+  return ( <DashboardLayout>
     <Component {...pageProps} />
-  </Layout>)
+  </DashboardLayout>)
 }

@@ -1,15 +1,18 @@
 import React from 'react'
 import { HeaderMenu } from './HeaderMenu'
 import { FooterDiv } from './FooterDiv'
+import { Layout} from 'antd';
 
-function Layout({children}:any) {
+function DashboardLayout({children}:any) {
   return (
     <div>
-      <HeaderMenu/>
-      {children}
-      <FooterDiv/>
+      <Layout className="layout">
+        <HeaderMenu/>
+        {children}
+        <FooterDiv/>
+      </Layout>
     </div>
   )
 }
 
-export default Layout
+export default DashboardLayout
