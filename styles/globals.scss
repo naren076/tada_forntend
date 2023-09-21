@@ -6,6 +6,55 @@
     background: #EDECE1;
 }
 
-.ant-layout-footer {
-    padding: 25px 0;
+.content-height {
+    min-height: calc(100vh - 150px);
 }
+
+.ant-menu {
+    background: #edece1;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .ant-menu-item-selected {
+    color: #c8102e !important;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .ant-menu-item:hover::after {
+    border-bottom: 3px solid #c8102e !important;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+ .ant-menu-item-selected::after {
+    border-bottom-color: #c8102e !important;
+  }
+  
+  .ant-menu > .ant-menu-item-active {
+    color: #c8102e !important;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .messageiconrow {
+    margin-top: 41px;
+    margin-left: 110px;
+  }
+
+  .homenewshead {
+    font-family: "J&J Circular";
+  }
+  
+  .homenewsdate {
+    margin-left: 168px;
+    margin-top: 15px;
+    font-family: "Avenir Next";
+  }
+  .homenews {
+    margin-left: 168px;
+    margin-top: 15px;
+    width: 34%;
+    font-family: "Avenir Next";
+  }
