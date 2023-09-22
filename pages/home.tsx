@@ -172,7 +172,7 @@ export default function HomePage() {
           <div>
             <p className="text-2xl font-bold homenewshead">News and Updates</p>
           </div>
-          <div>
+          <div className="flex flex-nowrap">
             <p style={{ color: "#000000" }}>Tolerance Analysis</p>{" "}
             <p style={{ color: "#999999" }}>| August 13, 2023</p>
           </div>
