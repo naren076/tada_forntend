@@ -63,3 +63,23 @@
   float: right;
   top: 9%;
 }
+
+.ant-table-thead .ant-table-cell {
+  color: gray !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  font-size: 12px;
+}
+
+.ant-table-tbody > tr > td {
+  border: none !important;
+  font-size: 14px;
+}
+
+.rowhome {
+  display: flex;
+  flex-wrap: wrap;
+}
+.columnhome {
+  flex: 50%;
+}

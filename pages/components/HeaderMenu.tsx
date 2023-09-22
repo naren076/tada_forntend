@@ -12,6 +12,7 @@ import {
 } from "antd";
 import type { MenuProps } from "antd";
 import { UserOutlined } from "@ant-design/icons";
+import { useRouter } from "next/navigation";
 
 const { Header } = Layout;
 
@@ -39,6 +40,8 @@ const itemsright: MenuProps["items"] = [
 ];
 
 export const HeaderMenu: React.FC = () => {
+  const router = useRouter();
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -86,6 +89,11 @@ export const HeaderMenu: React.FC = () => {
     if (e.key == "4") {
       showModal();
     }
+
+    if (e.key == "1") {
+      router.push("/home");
+    }
+
     setCurrent(e.key);
   };
 
