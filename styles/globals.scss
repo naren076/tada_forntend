@@ -69,14 +69,16 @@
   background-color: #ffffff !important;
   border: none !important;
   font-size: 12px;
+  font-family: "J&J Circular";
 }
 
 .ant-table-tbody > tr > td {
   border: none !important;
   font-size: 14px;
+  font-family: "J&J Circular";
 }
 
-tbody > tr > :nth-child(2) {
+.tablerecentstacks tbody > tr > :nth-child(2) {
   text-decoration: underline;
 }
 
@@ -86,4 +88,24 @@ tbody > tr > :nth-child(2) {
 }
 .columnhome {
   flex: 50%;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #c8102e !important;
+  font-weight: 500;
+  font-size: 16;
+}
+
+.ant-tabs-ink-bar {
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.tableprojects tbody > tr > :nth-child(1) {
+  text-decoration: underline;
+}
+
+.tablewylie tbody > tr > :nth-child(1) {
+  text-decoration: underline;
 }
