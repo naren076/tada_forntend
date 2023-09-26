@@ -337,9 +337,10 @@ export default function HomePage() {
 
           <ConfigProvider
             theme={{
-              token: {
-                fontSize: 16,
-                fontFamily: '"J&J Circular"',
+              components: {
+                Tabs: {
+                  itemHoverColor: "#c8102e",
+                },
               },
             }}
           >
@@ -347,8 +348,11 @@ export default function HomePage() {
               defaultActiveKey="1"
               items={itemstab}
               onChange={onTabChange}
-              tabBarStyle={{ color: "red" }}
-              style={{ alignItems: "center" }}
+              style={{
+                alignItems: "center",
+                fontSize: 16,
+                fontFamily: '"J&J Circular"',
+              }}
             />
 
             {visibleTab ? (
